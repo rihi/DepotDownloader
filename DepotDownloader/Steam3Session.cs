@@ -68,6 +68,7 @@ namespace DepotDownloader
 
             var clientConfiguration = SteamConfiguration.Create(config =>
                 config
+                    .WithProtocolTypes(ProtocolTypes.WebSocket)
                     .WithHttpClientFactory(HttpClientFactory.CreateHttpClient)
             );
 
